@@ -1,0 +1,170 @@
+/* -------- PROPRIÉTÉS COMMUNES -------- */
+
+/* Corps de la page */
+body{
+  /* Fond et contour */
+  background-color: cornflowerblue;
+  border: 2px solid black;
+}
+
+/* Titres et sous-titres */
+h1, h2, h3{
+  /* Centrage */
+  text-align: center;
+}
+
+/* Header et Footer */
+header, footer{
+  /* Fond et contour */
+  background-color: rgb(0, 80, 200);
+  border: 1px solid transparent;
+}
+
+/* Div principale du composant Quiz */
+#div_composant_Quiz{
+  /* Fond et contour */
+  border: 2px solid black;
+}
+
+/* Main */
+main{
+  /* Position des éléments internes */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Liste de réponses */
+ul{
+  /* Fond et contour */
+  border: 2px solid black;
+
+  /* Suppression des puces */
+  list-style: none;
+
+  /* Espace interne */
+  padding: 0;
+
+  /* Espace externe */
+  margin: 0 10px;
+
+  /* Centrage des réponses */
+  text-align: center;
+}
+
+/* Questions, choix et réponses pairs */
+li:nth-child(odd){
+  /* Fond et contour */
+  background-color: rgb(200, 80, 0);
+}
+
+/* Questions, choix et réponses impairs */
+li:nth-child(even){
+  /* Fond et contour */
+  background-color: rgb(200, 160, 0);
+}
+
+/* Boutons */
+input[type=radio], button{
+  cursor: pointer;
+}
+
+/* Div des éléments sous les choix de réponses */
+#div_sous_réponses{
+  /* Dimensions */
+  width: 100%;
+
+  /* Position des éléments internes */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Div des résultats */
+#div_résultats{
+  /* Fond et contour */
+  border: 2px solid black;
+
+  /* Position des éléments internes */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Sous-titres de la div des Résultats */
+#div_résultats h2, #div_résultats h3{
+  /* Espace externe */
+  margin-bottom: 0;
+}
+
+/* Boutons de la div des résultats */
+#div_résultats button{
+  /* Espace externe */
+  margin-top: 10px;
+}
+
+/* -------- RESPONSIVE -------- */
+
+/* VERSION TRÈS PETITE */
+@media all and (max-width: 344px)
+{
+  /* Div principale du composant Quiz */
+  #div_composant_Quiz{
+    /* Dimensions */
+    width: 60%;
+  }
+
+  /* Questions dans les Résultats, choix et réponses */
+  li, span{
+    /* Taille du texte */
+    font-size: 18px;
+  }
+}
+
+/* VERSION PETITE */
+@media all and (min-width: 345px) and (max-width: 540px)
+{
+  /* Div principale du composant Quiz */
+  #div_composant_Quiz{
+    /* Dimensions */
+    width: 70%;
+  }
+
+  /* Questions dans les Résultats, choix et réponses */
+  li, span{
+    /* Taille du texte */
+    font-size: 20px;
+  }
+}
+
+/* VERSION MOYENNE */
+@media all and (min-width: 541px) and (max-width: 912px)
+{
+  /* Div principale du composant Quiz */
+  #div_composant_Quiz{
+    /* Dimensions */
+    width: 40%;
+  }
+
+  /* Questions dans les Résultats, choix et réponses */
+  li, span{
+    /* Taille du texte */
+    font-size: 22px;
+  }
+}
+
+/* VERSION GRANDE */
+@media all and (min-width: 913px)
+{
+  /* Div principale du composant Quiz */
+  #div_composant_Quiz{
+    /* Dimensions */
+    width: 40%;
+  }
+
+  /* Questions dans les Résultats, choix et réponses */
+  li, span{
+    /* Taille du texte */
+    font-size: 22px;
+  }
+}
